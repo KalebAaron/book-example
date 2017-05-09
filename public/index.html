@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form id="addBook" onsubmit="app.createBook(event)">
+    <label name="Title">Title: </label>
+    <input type="text" name="bookTitle" placeholder="Title" required/>
+    <label name="Publisher">Publisher: </label>
+    <input type="text" name="bookPublisher" placeholder="Publisher" required/>
+    <label name="Rating">Rating: </label>
+    <input type="number" name="bookRating" placeholder="1-5" required/>
+    <label name="Author">Author: </label>
+    <input type="text" name="bookAuthor" placeholder="Author" required/>
+    <input type="submit" value="Submit"/>
+  </form>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="service.js"></script>
+  <script src="controller.js"></script>
+  <script src="init.js"></script>
+</body>
+</html>
