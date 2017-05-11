@@ -1,1 +1,4 @@
-var app = new Controller
+var app ={
+ controller: new Controller,
+ movieController: new MovieController
+} 

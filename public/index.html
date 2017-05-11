@@ -7,8 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-
-<form id="addBook" onsubmit="app.createBook(event)">
+<h1>Add a book</h1>
+<form id="addBook" onsubmit="app.controller.createBook(event)">
     <label name="Title">Title: </label>
     <input type="text" name="bookTitle" placeholder="Title" required/>
     <label name="Publisher">Publisher: </label>
@@ -19,15 +19,25 @@
     <input type="text" name="bookAuthor" placeholder="Author" required/>
     <input type="submit" value="Submit"/>
   </form>
+<h1>Add a movie</h1>
+<form id="addMovie" onsubmit="app.movieController.createMovie(event)">
+    <label name="Title">Title: </label>
+    <input type="text" name="movieTitle" placeholder="Title" required/>
+    <label name="Release">Release Date: </label>
+    <input type="number" name="movieRelease" placeholder="2017" required/>
+    <label name="Rating">Rating: </label>
+    <input type="text" name="movieRating" placeholder="g/pg/pg-13/r" required/>
+    <label name="Review">Review: </label>
+    <input type="number" name="movieReview" placeholder="1-5" required/>
+    <input type="submit" value="Submit"/>
+  </form>
 
 
-
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="service.js"></script>
   <script src="controller.js"></script>
+  <script src="movie/movieService.js"></script>
+  <script src="movie/movieController.js"></script>
   <script src="init.js"></script>
 </body>
 </html>
